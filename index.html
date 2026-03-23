@@ -44,8 +44,15 @@
     <main class="px-5 py-6 md:max-w-6xl mx-auto">
 
         <div class="flex justify-between items-center mb-2">
-      <h2 class="font-medium">Available Jobs</h2>
-      <span id="tabCount" class="text-sm text-gray-500">0 jobs</span>
+        <h2 class="font-medium">Available Jobs</h2>
+        <span id="tabCount" class="text-sm text-gray-500">0 jobs</span>
+    </div>
+
+
+    <div class="flex gap-2 mb-4">
+      <button onclick="setTab('all')" class="bg-blue-600 text-white px-3 py-1 text-sm rounded">All</button>
+      <button onclick="setTab('interview')" class="bg-gray-200  px-3 py-1 text-sm rounded">Interview</button>
+      <button onclick="setTab('rejected')" class="bg-gray-200 px-3 py-1 text-sm rounded">Rejected</button>
     </div>
 
     </main>
