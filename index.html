@@ -22,7 +22,24 @@
       </style>
 </head>
 <body class="bg-slate-100 font-dm min-h-screen">
-    <h1>hello</h1>
+    <header class="px-5 py-6 md:max-w-6xl mx-auto">
+        <h1 class="font-syne text-2xl md:text-3xl font-extrabold text-navy tracking-tight">Job Application Tracker</h1>
+
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="bg-white border rounded p-4">
+        <p class="text-sm text-gray-500">Total</p>
+        <p id="totalCount" class="text-2xl font-semibold">0</p>
+      </div>
+      <div class="bg-white border rounded p-4">
+        <p class="text-sm text-gray-500">Interview</p>
+        <p id="interviewCount" class="text-2xl font-semibold text-green-600">0</p>
+      </div>
+      <div class="bg-white border rounded p-4">
+        <p class="text-sm text-gray-500">Rejected</p>
+        <p id="rejectedCount" class="text-2xl font-semibold text-red-500">0</p>
+      </div>
+    </div>
+    </header>
     
 </body>
 </html>
