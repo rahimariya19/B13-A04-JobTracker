@@ -25,19 +25,19 @@
 
     <!-- header -->
     <header class="px-5 py-6 md:max-w-6xl mx-auto">
-        <h1 class="font-syne text-2xl md:text-3xl font-extrabold text-navy tracking-tight">Job Application Tracker</h1>
+        <h1 class="font-syne text-2xl md:text-3xl font-extrabold text-[#002C5C] mb-8">Job Application Tracker</h1>
 
          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
       <div class="bg-white border rounded p-4">
-        <p class="text-sm text-gray-500">Total</p>
+        <p class="text-sm text-[#A8ACB2]">Total</p>
         <p id="totalCountNo" class="text-2xl font-semibold">0</p>
       </div>
       <div class="bg-white border rounded p-4">
-        <p class="text-sm text-gray-500">Interview</p>
+        <p class="text-sm text-[#A8ACB2]">Interview</p>
         <p id="interviewCountNo" class="text-2xl font-semibold text-green-600">0</p>
       </div>
       <div class="bg-white border rounded p-4">
-        <p class="text-sm text-gray-500">Rejected</p>
+        <p class="text-sm text-[#A8ACB2]">Rejected</p>
         <p id="rejectCountNo" class="text-2xl font-semibold text-red-500">0</p>
       </div>
     </div>
@@ -48,24 +48,35 @@
     <main class="px-5 py-6 md:max-w-6xl mx-auto">
 
         <div class="flex justify-between items-center mb-2">
-        <h2 class="font-medium">Available Jobs</h2>
+        <h2 class="font-medium text-[#002C5C]">Available Jobs</h2>
         <span id="tabNo" class="text-sm text-gray-500">0 jobs</span>
     </div>
 
           <!-- tab -->
     <div class="flex gap-2 mb-4">
-      <button onclick="setTab('all')" class="bg-blue-600 text-white px-3 py-1 text-sm rounded">All</button>
-      <button onclick="setTab('interview')" class="bg-gray-200  px-3 py-1 text-sm rounded">Interview</button>
-      <button onclick="setTab('rejected')" class="bg-gray-200 px-3 py-1 text-sm rounded">Rejected</button>
+
+      <!-- <button id="tab-all" onclick="btnTab('all')" class="btn btn-xs text-black">All</button>
+      <button id="tab-interview" onclick="btnTab('interview')" class="btn btn-xs text-black">Interview</button>
+      <button id="tab-rejected" onclick="btnTab('rejected')" class="btn btn-xs text-black">Rejected</button> -->
+
+
+
+
+      <button id="tab-all" onclick="btnTab('all')" class="btn btn-xs text-black sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ">All</button>
+
+      <button id="tab-interview" onclick="btnTab('interview')" class="btn btn-xs text-black sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Interview</button>
+
+      <button id="tab-rejected" onclick="btnTab('rejected')" class="btn btn-xs text-black sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Rejected</button>
+
     </div>
 
 
       
     <!-- No jobs available -->
-    <div id="jobContainer"></div>
+    <div id="noJobContainer"></div>
     <div id="emptyState" class="hidden text-center py-16">
       <img src="./jobs.png" class="w-16 mx-auto mb-4">
-      <h3 class="font-semibold">No jobs available</h3>
+      <h3 class="font-semibold text-[#0A3563]">No jobs available</h3>
       <p class="text-gray-500 text-sm">Check back soon for new job opportunities</p>
     </div>
   </div>
