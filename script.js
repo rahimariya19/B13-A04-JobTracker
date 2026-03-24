@@ -22,26 +22,15 @@ let jobs = [
 
 
 
-// button function
-// function updateActiveTab(){
-//   document.getElementById("tab-all").classList.remove("bg-[#002C5C]", "text-white");
-//   document.getElementById("tab-interview").classList.remove("bg-[#002C5C]", "text-white");
-//   document.getElementById("tab-rejected").classList.remove("bg-[#002C5C]", "text-white");
-//   document.getElementById("tab-" + activeTab).classList.add("bg-[#002C5C]", "text-white");
-// }
+// button function 
 
-// function btnTab(tab){
-//   activeTab = tab;
-//   updateActiveTab(); 
-
-//   jobTracker();
-// }
 
 function updateActiveTab() {
-  document.getElementById("tab-all").classList.remove("bg-[#002C5C]", "text-white");
-  document.getElementById("tab-interview").classList.remove("bg-[#002C5C]", "text-white");
-  document.getElementById("tab-rejected").classList.remove("bg-[#002C5C]", "text-white");
-  document.getElementById("tab-" + activeTab).classList.add("bg-[#002C5C]", "text-white");
+  document.getElementById("tab-all").classList.remove("bg-[#3B82F6]", "text-white");
+  document.getElementById("tab-interview").classList.remove("bg-[#3B82F6]", "text-white");
+  document.getElementById("tab-rejected").classList.remove("bg-[#3B82F6]", "text-white");
+  // document.getElementById("tab-" + activeTab).classList.add("bg-[#002C5C]", "text-white");
+  document.getElementById("tab-" + activeTab).classList.add("bg-[#3B82F6]", "text-white");
 }
 
 function btnTab(tab){
@@ -102,19 +91,19 @@ function jobTracker(){
 
   for(let job of filtered){
     container.innerHTML += `
-      <div class="bg-white border rounded-lg p-4 mb-4">
+      <div class="bg-white border-none  rounded-lg p-3 mb-4">
         <div class="flex justify-between">
-          <h3 class="font-semibold text-[#002C5C]">${job.company}</h3>
+          <h3 class="text-4xl mb-2 font-semibold text-[#002C5C]">${job.company}</h3>
           <button onclick="deleteJob(${job.id})" class="text-gray-400">✕</button>
         </div>
-        <p class="text-sm text-gray-600">${job.position}</p>
-        <p class="text-sm text-gray-500">${job.meta}</p>
+        <p class="mb-2 text-sm text-[#68778E]">${job.position}</p>
+        <p class="text-sm text-[#68778E]">${job.meta}</p>
         
 
         <span class="mb-3 mt-3 inline-block text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded bg-slate-200 text-[#002C5C]">NOT APPLIED</span>
 
 
-        <p class="text-xs text-black leading-relaxed mb-4">${job.desc}</p>
+        <p class="text-xl text-[#3A4350] leading-relaxed mb-4">${job.desc}</p>
         <div class="flex gap-2 mt-4">
           <button onclick="setStatus(${job.id}, 'interview')" class="border border-green-500 text-green-600 text-xs px-3 py-1 rounded">INTERVIEW</button>
           <button onclick="setStatus(${job.id}, 'rejected')" class="border border-red-500 text-red-500 text-xs px-3 py-1 rounded">REJECTED</button>

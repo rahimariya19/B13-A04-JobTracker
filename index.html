@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JobTracker</title>
     <!-- tailwind+daisy -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -25,19 +25,19 @@
 
     <!-- header -->
     <header class="px-5 py-6 md:max-w-6xl mx-auto">
-        <h1 class="font-syne text-2xl md:text-3xl font-extrabold text-[#002C5C] mb-8">Job Application Tracker</h1>
+        <h1 class="font-syne text-3xl md:text-5xl font-extrabold text-[#002C5C] mb-8">Job Application Tracker</h1>
 
          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-      <div class="bg-white border rounded p-4">
-        <p class="text-sm text-[#A8ACB2]">Total</p>
+      <div class="bg-[#e0e3e5] border-none rounded-lg p-5">
+        <p class=" text-xl text-[#47484b]">Total</p>
         <p id="totalCountNo" class="text-2xl font-semibold">0</p>
       </div>
-      <div class="bg-white border rounded p-4">
-        <p class="text-sm text-[#A8ACB2]">Interview</p>
+      <div class="bg-[#e0e3e5] border-none rounded-lg p-5">
+        <p class="text-xl text-[#47484b]">Interview</p>
         <p id="interviewCountNo" class="text-2xl font-semibold text-green-600">0</p>
       </div>
-      <div class="bg-white border rounded p-4">
-        <p class="text-sm text-[#A8ACB2]">Rejected</p>
+      <div class="bg-[#e0e3e5] border-none rounded-lg p-5">
+        <p class="text-xl text-[#47484b]">Rejected</p>
         <p id="rejectCountNo" class="text-2xl font-semibold text-red-500">0</p>
       </div>
     </div>
@@ -48,16 +48,14 @@
     <main class="px-5 py-6 md:max-w-6xl mx-auto">
 
         <div class="flex justify-between items-center mb-2">
-        <h2 class="font-medium text-[#002C5C]">Available Jobs</h2>
+        <h2 class="text-4xl mb-3 font-medium text-[#002C5C]">Available Jobs</h2>
         <span id="tabNo" class="text-sm text-gray-500">0 jobs</span>
     </div>
 
           <!-- tab -->
     <div class="flex gap-2 mb-4">
 
-      <!-- <button id="tab-all" onclick="btnTab('all')" class="btn btn-xs text-black">All</button>
-      <button id="tab-interview" onclick="btnTab('interview')" class="btn btn-xs text-black">Interview</button>
-      <button id="tab-rejected" onclick="btnTab('rejected')" class="btn btn-xs text-black">Rejected</button> -->
+     
 
 
 
